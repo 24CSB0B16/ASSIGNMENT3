@@ -1,0 +1,138 @@
+<html>
+<head>
+<title> ROOM BOOKING </title>
+<style>
+h1 {
+  text-shadow: 2px 2px violet;
+}
+body {
+  background-image: url('rbfbg.jpeg');
+background-size: cover;
+}
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;  
+}
+td {
+  padding-left: 10px; 
+  padding-right: 10px; 
+}
+input[type="text"], input[type="date"], input[type="radio"] {
+  margin-left: 5px; 
+}
+input[type="submit"], input[type="reset"] {
+            font-size: 16px;
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        input[type="reset"] {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #c82333;
+        }
+</style>
+</head>
+<body> 
+<center> 
+<h1> ROOM BOOKING FORM </h1> 
+<table style="width:60%">
+<tr>
+<td> FIRST NAME: </td>
+<td> <input type="text" name="first_name"> </td>
+</tr>
+<tr>
+<td> LAST NAME: </td>
+<td> <input type="text" name="last_name"> </td>
+</tr>
+<tr>
+<td> ADDRESS: </td>
+<td> <input type="text" name="address"> </td>
+</tr>
+<tr>
+<td> EMAIL: </td>
+<td> <input type="text" name="email"> </td>
+</tr>
+<tr>
+<td> TELEPHONE NUMBER: </td>
+<td> <input type="text" name="telephone"> </td>
+</tr>
+<tr> 
+<td> ROOM TYPE: </td>
+<td>
+  <input type="radio" id="single" name="room_type" value="Single Room"> Single Room<br>
+  <input type="radio" id="double" name="room_type" value="Double Room"> Double Room<br>
+  <input type="radio" id="suite" name="room_type" value="Suite"> Suite<br>
+</td>
+</tr>
+<tr>
+<td> ARRIVAL DATE: </td>
+<td> <input type="date" name="arrival_date"> </td>
+</tr>
+<tr>
+<td> DEPARTURE DATE: </td>
+<td> <input type="date" name="departure_date"> </td>
+</tr>
+<tr>
+<td> ACCOMPANY FIRST NAME: </td>
+<td> <input type="text" name="accompany_first_name"> </td>
+</tr>
+<tr>
+<td> ACCOMPANY LAST NAME: </td>
+<td> <input type="text" name="accompany_last_name"> </td>
+</tr>
+<tr>
+<td> CHILDREN: </td>
+<td> <input type="text" name="children"> </td>
+</tr>
+<tr> 
+<td> PAYMENT METHOD: </td>
+<td>
+  <input type="radio" id="credit_card" name="payment_method" value="Credit Card"> CREDIT CARD<br>
+  <input type="radio" id="bank_transfer" name="payment_method" value="Bank Transfer"> BANK TRANSFER<br>
+  <input type="radio" id="cash" name="payment_method" value="Cash"> CASH<br>
+</td>
+</tr>
+<tr>
+<td> TYPE OF CREDIT CARD: </td>
+<td> <input type="text" name="credit_card_type"> </td>
+</tr>
+<tr>
+<td> NAME SHOWN ON CREDIT CARD: </td>
+<td> <input type="text" name="credit_card_name"> </td>
+</tr>
+<tr>
+<td> CREDIT CARD NUMBER: </td>
+<td> <input type="text" name="credit_card_number"> </td>
+</tr>
+<tr>
+<td> EXPIRY DATE: </td>
+<td> <input type="text" name="expiry_date"> </td>
+</tr>
+<tr>
+<td> CVV CODE: </td>
+<td> <input type="text" name="cvv_code"> </td>
+</tr>
+</table>
+<div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+</center>
+</body>
+</html>
